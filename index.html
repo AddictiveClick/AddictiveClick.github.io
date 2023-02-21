@@ -5,11 +5,21 @@
     <link rel='stylesheet' type='css' href='main.css'>
   </head>
   <body>
+    
+    <h1 id="clicks">Clicks</h1>
     <button onclick="add()">Click me</button>
+    
+    
     <script>
+      var clicks = 0;
+      
       function add(){
         console.log("add");
+        var++;
+        document.querySelector("#clicks").innerHTML = clicks
       }
     </script>
+    
+    
   </body>
 </html>
