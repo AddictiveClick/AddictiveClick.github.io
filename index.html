@@ -4,21 +4,24 @@
     <title>Click!</title>
     <link rel='stylesheet' type='css' href='main.css'>
   </head>
-  <body>
+  <body onload='update_count()'>
     
     <h1 id="clicks">Clicks</h1>
-    <button onclick="add()">Click me</button>
+    <button onclick="add('clicks')">Click me</button>
     
     
     <script>
       var clicker = {
         clicks:0
       }
-      function add(){
+      function add(thing){
         console.log("add");
-        clicker.clicks++;
-        document.querySelector("#clicks").innerHTML = clicker.clicks
+        clicker.[thing]++;
       }
+      function update_count() {
+        setInterval(() => {
+          document.querySelector("#clicks").innerHTML = clicker.clicks
+        }, 50)
     </script>
     
     
