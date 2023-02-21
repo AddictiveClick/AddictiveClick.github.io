@@ -14,7 +14,9 @@
         }
 
         function update_count() {
-          setInterval(function() {document.querySelector("#clicks").innerHTML = clicker.clicks}, 50);
+          setInterval(() => {
+            document.querySelector("#clicks").innerHTML = clicker.clicks
+          },50);
         }
      </script>
     
