@@ -11,12 +11,13 @@
     
     
     <script>
-      var clicks = 0;
-      
+      var clicker = {
+        clicks:0
+      }
       function add(){
         console.log("add");
-        clicks++;
-        document.querySelector("#clicks").innerHTML = clicks
+        clicker.clicks++;
+        document.querySelector("#clicks").innerHTML = clicker.clicks
       }
     </script>
     
